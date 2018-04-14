@@ -6,7 +6,7 @@ Write is not supported, except address write.<br/>
 Only continuous reading from 0 to end has been tested.
 
 Pins used:<br/>
->PA6 is clock (SCL)
+>PA6 is clock (SCL)<br/>
 >PA7 is data (SDA)
 
 Pull-up is not implemented or tested, on my circuit there was an external pull-up.
