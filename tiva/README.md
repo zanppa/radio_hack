@@ -27,6 +27,6 @@ to<br/>
 This way we can override them in our own main and get rid off all "Arduino  style" initializations!
 
 ## More info
-This was used to emulate EEPROM of KTmicro's KT0922 based FM/AM radio.
-Pressing SW1 or SW2 during boot changed the second FM band of the radio.
+This was used to emulate EEPROM of KTmicro's KT0922 based FM/AM radio.<br/>
+Pressing SW1 or SW2 during boot changed the second FM band of the radio.<br/>
 The radio reads full memory content on startup.
