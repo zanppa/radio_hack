@@ -13,17 +13,17 @@ Pull-up is not implemented or tested, on my circuit there was an external pull-u
 
 ## Compiling
 This is written with Energia 15, http://energia.nu/
-The .ino is the main file used in Energia but it is not needed and since left empty.
-It is necessary to modify the main.cpp in Energia's tivac library, in my case the directory is
-  `%LOCALAPPDATA%\Energia15\packages\energia\hardware\tivac\1.0.3\cores\tivac`.
-Change init from
-`void _init(void)`
-to
-`void __attribute__((weak)) _init(void)`
-and main from
-`int main(void)`
-to
-`int __attribute__((weak)) main(void)`
+The .ino is the main file used in Energia but it is not needed and since left empty.<br/>
+It is necessary to modify the main.cpp in Energia's tivac library, in my case the directory is<br/>
+  `%LOCALAPPDATA%\Energia15\packages\energia\hardware\tivac\1.0.3\cores\tivac`.<br/>
+Change init from<br/>
+`void _init(void)`<br/>
+to<br/>
+`void __attribute__((weak)) _init(void)`<br/>
+and main from<br/>
+`int main(void)`<br/>
+to<br/>
+`int __attribute__((weak)) main(void)`<br/>
 This way we can override them in our own main and get rid off all "Arduino  style" initializations!
 
 ## More info
