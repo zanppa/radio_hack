@@ -1,13 +1,13 @@
 # I2C EEPROM emulator (slave)
-This is a very simple I2C slave that emulates 256 byte (2kbit) EEPROM.
+This is a very simple I2C slave that emulates 256 byte (2kbit) EEPROM.<br/>
 Protocol is based on Microchip's 24LC02B datasheet.
 
-Write is not supported, except address write.
+Write is not supported, except address write.<br/>
 Only continuous reading from 0 to end has been tested.
 
-Pins used:
-PA6 is clock (SCL)
-PA7 is data (SDA)
+Pins used:<br/>
+>PA6 is clock (SCL)
+>PA7 is data (SDA)
 
 Pull-up is not implemented or tested, on my circuit there was an external pull-up.
 
